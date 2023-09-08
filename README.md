@@ -4,6 +4,9 @@ pip3 install adafruit-circuitpython-dht
 
 sudo apt-get install libgpiod2
 
+#apt-get instead of pip to avoid hanging on install
+sudo apt-get install python3-matplotlib 
+
 #To do
 
 sqlite3 sensor_data.db
