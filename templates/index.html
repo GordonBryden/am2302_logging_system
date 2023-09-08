@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raspberry Pi Temperature and Humidity Graph</title>
+    <script>
+        function refreshPage() {
+            location.reload(); // Reload the current page
+        }
+
+        // Refresh the page every 60 seconds (1 minute)
+        setTimeout(refreshPage, 60000);
+    </script>
+</head>
+<body>
+    <h1>Temperature and Humidity Data</h1>
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Temperature and Humidity Graph">
+</body>
+</html>
