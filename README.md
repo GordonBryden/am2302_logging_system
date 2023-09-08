@@ -1,0 +1,19 @@
+# am2302_logging_system
+
+pip3 install adafruit-circuitpython-dht
+
+sudo apt-get install libgpiod2
+
+#To do
+
+sqlite3 sensor_data.db
+
+CREATE TABLE sensor_data (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    temperature REAL,
+    humidity REAL
+);
+
+@reboot sleep 30 && /usr/bin/python3 /path/to/data_logger.py
+@reboot sleep 60 && /usr/bin/python3 /path/to/app.py
